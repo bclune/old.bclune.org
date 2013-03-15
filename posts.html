@@ -1,0 +1,14 @@
+---
+layout: default
+title: Posts
+---
+<div class="px960-left-col">
+{% for post in site.posts limit: 3 %}
+<h2 class="post-title"><a href="{{ post.url }}">{{ post.title }}</a></h2>
+<h3 class="post-date sans700">{{ post.date | date_to_string }}</h3>
+<p class="post-content">{{ post.content | strip_html | truncatewords: 75 }}</br>
+<a class="continue-reading" href="{{ post.url }}">Continue Reading</a>
+</p>
+{% endfor %}
+</div>
+{% include posts_sidebar.html %}
