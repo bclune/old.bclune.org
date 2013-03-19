@@ -41,6 +41,24 @@ $gamma: #888;
 	content: "\23";
 }
 
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+.clear {
+  clear: both;
+}
+
+.right-col .icon-glasses {
+  color: $primary;
+  font-size: 8em;
+  margin-bottom: .175em;
+}
+
 body {
   font-size: 62.5%; }
 
@@ -103,6 +121,7 @@ body {
 .main h2 {
   color: $primary;
   font-size: 2.4em;
+  padding-bottom: .375em;
   a {
     text-decoration: none;
     color: $primary;
@@ -110,13 +129,16 @@ body {
       text-decoration: underline; } } }
 
 .posts-sidebar h3 {
-  color: $alpha;
+  color: $beta;
   font-size: 2em;
+  text-align: right;
   line-height: 1.6em; }
 
 .main p {
   color: $beta;
-  font-size: 2em; }
+  font-size: 2em; 
+  line-height: 1.4em; 
+  margin-bottom: 1em; } 
 
 .post-title {
   float: left; }
@@ -132,16 +154,18 @@ body {
   margin-bottom: 1em; }
 
 .continue-reading {
-  line-height: 2em;
-  font-size: .8em;
-  color: $gamma; }
+  color: $tertiary; }
 
-.px960-left-col {
+.single-col {
+  max-width: 100%;
+  padding: 1.4em 1.2em 1.4em 1.4em; }
+  
+.left-col {
   float: left;
   max-width: 76.6em;
   padding: 1.4em 0 1.4em 1.4em; }
 
-.px960-right-col {
+.right-col {
   float: right;
   max-width: 16.6em;
   padding: 1.4em 1.2em 1.4em 1.4em; }
