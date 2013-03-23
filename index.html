@@ -9,8 +9,10 @@ title: Posts
 {% capture continue %}
 &hellip; <a class="continue-reading" href="{{ post.url }}">Continue Reading</a>
 {% endcapture %}
-<p class="post-content">{{ post.content | strip_html | truncatewords: 75, continue }}
+<div class="post-content">
+<p>{{ post.content | strip_html | truncatewords: 75, continue }}
 </p>
+</div>
 {% endfor %}
 </div>
 {% include posts_sidebar.html %}

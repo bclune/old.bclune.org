@@ -1,10 +1,16 @@
 {% include head.html %}
 {% include nav.html %}
 {% include subtitle.html %}
-<div class="main">
+<div class="main sans400">
 <div class="px960-wrapper">
-<h1>{{ title }}</h1>
+<div class="left-col">
+<h1 class="post-title">{{ page.title }}</h1>
+<h3 class="post-date sans700">{{ page.date | date_to_string }}</h3>
+<div class="post-content">
 {{ content }}
+</div>
+</div>
+{% include posts_sidebar.html %}
 </div>
 </div>
 {% include footer.html %}
