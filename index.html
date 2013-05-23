@@ -1,18 +1,17 @@
 ---
 layout: default
-title: Posts
+title: Brendan Clune - About
 ---
 <div class="left-col">
-{% for post in site.posts limit: 3 %}
-<h2 class="post-title"><a href="{{ post.url }}">{{ post.title }}</a></h2>
-<h3 class="post-date sans700">{{ post.date | date_to_string }}</h3>
-{% capture continue %}
-&hellip; <a class="continue-reading" href="{{ post.url }}">Continue Reading</a>
-{% endcapture %}
-<div class="post-content">
-<p>{{ post.content | strip_html | truncatewords: 75, continue }}
+<p>Equal parts beer geek, coffee junkie, and bicycle mechanic. Passionate about
+design. Obsessed with the web stack. Speaks JQuery and SASS. Dreams in
+Python. (Curses in PHP.) Lives in Vermont. Lurks on
+<a href="http://github.com/bclune">Github</a>. Plays the banjo. Maybe a
+wizard.
+</p>
+<p>
+Have a project, a comment, or just want to get in touch?
+<a href="mailto:brendan@bclune.org">Email me</a>.
 </p>
 </div>
-{% endfor %}
-</div>
-{% include posts_sidebar.html %}
+<div class="right-col"></div>
